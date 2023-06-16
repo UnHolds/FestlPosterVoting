@@ -1,0 +1,166 @@
+<html>
+
+    <head>
+        <link rel="stylesheet" href="css.css">
+    </head>
+
+
+    <body>
+
+        <h1>Festl Plakat Voting!</h1>
+        <div>
+            <strong>Regeln:</strong><br>
+            <ul>
+                <li>Jede Person darf nur 1mal abstimmen.</li>
+                <li>Es gewinnen alle Personen die das Poster mit den wenigsten Votes gevotet haben.</li>
+                <li>Alle die gewonnen haben bekommen einen "You-Won-Shot" beim Festl (solange der Vorrat reicht).</li>
+                <li>Gültige Namen sind: Mattermost-Username, Discord-Username (eg: test#1234), es geht auch Matrikelnummer aber es wird davon abgeraten.</li>
+            </ul>
+              
+        </div>
+
+        <br>
+
+        <div class="posters">
+            <div class="poster-container">
+                <img src="ressources/00.jpg" alt="Poster 00" class="poster"/>
+                <figcaption class="cap">Poster 00</figcaption>
+            </div>
+
+            <div class="poster-container">
+                <img src="ressources/01.jpg" alt="Poster 01" class="poster"/>
+                <figcaption class="cap">Poster 01</figcaption>
+            </div>
+
+            <div class="poster-container">
+                <img src="ressources/02.jpg" alt="Poster 02" class="poster"/>
+                <figcaption class="cap">Poster 02</figcaption>
+            </div>
+
+            <div class="poster-container">
+                <img src="ressources/03.jpg" alt="Poster 03" class="poster"/>
+                <figcaption class="cap">Poster 03</figcaption>
+            </div>
+
+            <div class="poster-container">
+                <img src="ressources/04.jpg" alt="Poster 04" class="poster"/>
+                <figcaption class="cap">Poster 04</figcaption>
+            </div>
+
+            <div class="poster-container">
+                <img src="ressources/05.jpg" alt="Poster 05" class="poster"/>
+                <figcaption class="cap">Poster 05</figcaption>
+            </div>
+
+            <div class="poster-container">
+                <img src="ressources/06.jpg" alt="Poster 06" class="poster"/>
+                <figcaption class="cap">Poster 06</figcaption>
+            </div>
+
+            <div class="poster-container">
+                <img src="ressources/07.jpg" alt="Poster 07" class="poster"/>
+                <figcaption class="cap">Poster 07</figcaption>
+            </div>
+
+            <div class="poster-container">
+                <img src="ressources/08.jpg" alt="Poster 08" class="poster"/>
+                <figcaption class="cap">Poster 08</figcaption>
+            </div>
+
+            <div class="poster-container">
+                <img src="ressources/09.jpg" alt="Poster 09" class="poster"/>
+                <figcaption class="cap">Poster 09</figcaption>
+            </div>
+
+            <div class="poster-container">
+                <img src="ressources/10.jpg" alt="Poster 10" class="poster"/>
+                <figcaption class="cap">Poster 10</figcaption>
+            </div>
+
+            <div class="poster-container">
+                <img src="ressources/11.jpg" alt="Poster 11" class="poster"/>
+                <figcaption class="cap">Poster 11</figcaption>
+            </div>
+
+            <div class="poster-container">
+                <img src="ressources/12.jpg" alt="Poster 12" class="poster"/>
+                <figcaption class="cap">Poster 12</figcaption>
+            </div>
+
+            <div class="poster-container">
+                <img src="ressources/13.jpg" alt="Poster 13" class="poster"/>
+                <figcaption class="cap">Poster 13</figcaption>
+            </div>
+
+            <div class="poster-container">
+                <img src="ressources/14.jpg" alt="Poster 14" class="poster"/>
+                <figcaption class="cap">Poster 14</figcaption>
+            </div>
+
+            <div class="poster-container">
+                <img src="ressources/15.jpg" alt="Poster 15" class="poster"/>
+                <figcaption class="cap">Poster 15</figcaption>
+            </div>
+            <div class="poster-container">
+                <img src="ressources/16.jpg" alt="Poster 16" class="poster"/>
+                <figcaption class="cap">Poster 16</figcaption>
+            </div>
+
+            <div class="poster-container">
+                <img src="ressources/17.jpg" alt="Poster 17" class="poster"/>
+                <figcaption class="cap">Poster 17</figcaption>
+            </div>
+
+            <div class="poster-container">
+                <img src="ressources/18.jpg" alt="Poster 18" class="poster"/>
+                <figcaption class="cap">Poster 18</figcaption>
+            </div>
+        </div>
+
+        <br><br>
+
+        <div class="form-container">
+            <h3>Now Vote!</h3>
+            <form action="/vote" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <br><br>
+                <label for="poster">Poster:</label>
+                <select id="poster" name="poster" required>
+                    <option value="00">Poster 00</option>
+                    <option value="01">Poster 01</option>
+                    <option value="02">Poster 02</option>
+                    <option value="03">Poster 03</option>
+                    <option value="04">Poster 04</option>
+                    <option value="05">Poster 05</option>
+                    <option value="06">Poster 06</option>
+                    <option value="07">Poster 07</option>
+                    <option value="08">Poster 08</option>
+                    <option value="09">Poster 09</option>
+                    <option value="10">Poster 10</option>
+                    <option value="11">Poster 11</option>
+                    <option value="12">Poster 12</option>
+                    <option value="13">Poster 13</option>
+                    <option value="14">Poster 14</option>
+                    <option value="15">Poster 15</option>
+                    <option value="16">Poster 16</option>
+                    <option value="17">Poster 17</option>
+                    <option value="18">Poster 18</option>
+                </select>
+                <br><br>
+                {{ hcaptcha }}
+                <br>
+                <br>
+                <input type="submit" value="Vote">
+            </form>
+        </div>
+
+        <br>
+        <br>
+
+        <div>
+            Du findest die Webseite hässlich? Dann verbessere sie und mach nen Pull-Request &lt3 GitHub: <a href="https://www.example.com">www.example.com</a>
+        </div>
+    </body>
+
+</html>

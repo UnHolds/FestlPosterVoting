@@ -1,0 +1,36 @@
+
+.posters {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.poster {
+    max-width: 200px;
+}
+
+.poster-container {
+    margin: 10px;
+}
+
+.cap {
+    text-align: center;
+}
+
+.form-container {
+    margin: auto;
+    width: fit-content;
+    block-size: fit-content;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.success-container {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
